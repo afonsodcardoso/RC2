@@ -1,0 +1,60 @@
+Apr 08 14:47:13.498 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 08 14:47:13.498 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51400.
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Afonso\Desktop\RC2\projects\guiao4\untitled\project-files\dynamips 
+Apr 08 14:47:13.982 GENERAL: working_dir=C:\Users\Afonso\Desktop\RC2\projects\guiao4\untitled\project-files\dynamips
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Afonso\Desktop\RC2\projects\guiao4\untitled\project-files\dynamips\0cddc72c-8fd3-456c-ac92-f11ee9ff1b34 
+Apr 08 14:47:13.982 GENERAL: working_dir=C:\Users\Afonso\Desktop\RC2\projects\guiao4\untitled\project-files\dynamips\0cddc72c-8fd3-456c-ac92-f11ee9ff1b34
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm create Router2 2 c7200 
+Apr 08 14:47:13.982 VM: VM Router2 created.
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5004 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-FE 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_exec_area Router2 64 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x60608040 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_ios Router2 C:/Users/Afonso/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router2 ca02.4174.0000 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_nvram Router2 512 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm set_ram Router2 512 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm slot_remove_binding Router2 0 0 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-2FE 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 PA-2FE-TX 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:13.982 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 2 0 PA-2FE-TX 
+Apr 08 14:47:18.621 HYPERVISOR: exec_cmd: nio create_udp udp-da360985-450f-419b-99fa-6326e1d2cf41 20024 127.0.0.1 20025 
+Apr 08 14:47:18.888 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 1 udp-da360985-450f-419b-99fa-6326e1d2cf41 
+Apr 08 14:47:18.888 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:18.966 HYPERVISOR: exec_cmd: nio create_udp udp-fddd5c67-c2b2-4ff2-941d-bb2cea86c464 20028 127.0.0.1 20029 
+Apr 08 14:47:18.969 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-fddd5c67-c2b2-4ff2-941d-bb2cea86c464 
+Apr 08 14:47:18.970 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:47:19.033 HYPERVISOR: exec_cmd: nio create_udp udp-d17e0f86-03de-4345-9803-b70e332be61c 20032 127.0.0.1 20033 
+Apr 08 14:47:19.036 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 1 0 udp-d17e0f86-03de-4345-9803-b70e332be61c 
+Apr 08 14:47:19.037 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:48:30.920 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+Apr 08 14:48:30.922 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 C:\Users\Afonso\Desktop\RC2\projects\guiao4\untitled\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Apr 08 14:48:30.922 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 14:48:30.924 HYPERVISOR: exec_cmd: vm set_config Router2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Apr 08 14:48:30.925 HYPERVISOR: exec_cmd: vm start Router2 
+Apr 08 14:49:01.286 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 14:53:01.354 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 14:54:33.314 HYPERVISOR: exec_cmd: vm set_ios Router2 C:/Users/Afonso/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Apr 08 14:59:01.494 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 15:42:32.521 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 15:57:32.831 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 15:57:33.240 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 15:57:33.241 HYPERVISOR: exec_cmd: vm stop Router2 
+Apr 08 15:57:33.449 VM: VM Router2 shutdown.
+Apr 08 15:57:33.450 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 15:57:33.947 HYPERVISOR: exec_cmd: vm get_status Router2 
+Apr 08 15:57:33.948 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Apr 08 15:57:33.951 HYPERVISOR: exec_cmd: vm delete Router2 
+Apr 08 15:57:33.951 VM: VM Router2 destroyed.
+Apr 08 15:57:33.953 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 08 15:57:34.385 HYPERVISOR: Stopped.
+Apr 08 15:57:34.385 GENERAL: reset done.
